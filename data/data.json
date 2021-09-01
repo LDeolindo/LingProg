@@ -1,0 +1,1215 @@
+{
+	"SCENE_00": {
+		"name": "Hahah! Sabia...",
+		"description": "Parabens você conseguiu! Conseguiu perder o jogo! Tchauzin.",
+		"object": {}
+	},
+	"SCENE_01": {
+		"name": "É problema meu...",
+		"description": "Sim, é PROBLEMA meu. Não sei o que fazer. Entretanto, preciso de AJUDA. BEZERRO bebe LEITE. Meu PAI toma AGUA. VIZINHO só na CACHAÇA. E eu não largo uma GELADA.",
+		"object": {
+			"PROBLEMA": {
+				"type": "SCENE_OBJ",
+				"description": "Fui criado de água. Mas se me colocarem mais água, desaparecerei aos poucos.",
+				"status": {
+					"positive": "NONE",
+					"negative": "Todos temos problemas!"
+				},
+				"properties": {},
+				"target": ""
+			},
+			"AJUDA": {
+				"type": "SCENE_OBJ",
+				"description": "Já está pedido ajuda? nem começou. kkk. Estou de bom humor! Lá vai. Leia com ATENÇÂO. Cuidado com as PALAVRAS e suas ORDENS! Suas escolhas, suas consequências. Lembre: Eu não sou seu AMIGO!",
+				"status": {
+					"positive": "NONE",
+					"negative": "Tá tão difícil?"
+				},
+				"properties": {},
+				"target": ""
+			},
+			"BEZERRO": {
+				"type": "SCENE_OBJ",
+				"description": "Olha um Bezerro!",
+				"status": {
+					"positive": "NONE",
+					"negative": "Por que eu teria um Bezerro na cozinha? O que eu faria com um Bezerro...?"
+				},
+				"properties": {
+					"LEITE": {
+						"type": "joke",
+						"message": "Você alimentou o Bezerro, esse é o espírito. Pode ficar com uma parte do leite!"
+					},
+					"CACHAÇA": {
+						"type": "joke",
+						"message": "oL,uoc Éh um !!erzoeBr"
+					},
+					"AGUA": {
+						"type": "joke",
+						"message": "Bezerro agradece pela agua! Muito de nada."
+					}
+				},
+				"target": ""
+			},
+			"LEITE": {
+				"type": "COLLECT_OBJ",
+				"description": "Leite? Parece dentro da validade!",
+				"status": {
+					"positive": "NONE",
+					"negative": "Ah! Não avisei? Não tenho mais 2 anos."
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			},
+			"PAI": {
+				"type": "SCENE_OBJ",
+				"description": "Papai?! Acho que pode ajudar.",
+				"status": {
+					"positive": "NONE",
+					"negative": "Oops! Então, meu pai tomou Doril, sumiu!"
+				},
+				"properties": {
+					"LEITE": {
+						"type": "joke",
+						"message": "Vai entender! tinha o Bezerro. Mas pode ficar."
+					}
+				},
+				"target": ""
+			},
+			"AGUA": {
+				"type": "COLLECT_OBJ",
+				"description": "Humm? dois elementos químicos: H2O",
+				"status": {
+					"positive": "NONE",
+					"negative": "Quimica, só na faculdade!"
+				},
+				"properties": {},
+				"target": ""
+			},
+			"VIZINHO": {
+				"type": "SCENE_OBJ",
+				"description": "Só no churrasco!",
+				"status": {
+					"positive": "Você vai até a janela e grita: Ei vizin, vai Corinthians!",
+					"negative": "NONE"
+				},
+				"properties": {
+					"CACHAÇA": {
+						"type": "joke",
+						"message": "Bora? Bora? Bora? Pode ficar!"
+					},
+					"LEITE": {
+						"type": "joke",
+						"message": "Ôh três palavras: tô com fome! Ahh e Vá para ... com esse leite."
+					}
+				},
+				"target": ""
+			},
+			"CACHAÇA": {
+				"type": "COLLECT_OBJ",
+				"description": "Água???",
+				"status": {
+					"positive": "Já? Ainda tá cedo. São só 15h... Porém você pega a cachaça e guarda.",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": ""
+			},
+			"GELADA": {
+				"type": "SCENE_OBJ",
+				"description": "Parece esta nevada!",
+				"status": {
+					"positive": "Você pega a CERVEJA! E vai para o QUARTO...",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_02"
+			}
+		}
+	},
+	"SCENE_02": {
+		"name": "Faça um movimento: ",
+		"description": "Não sei! Porém a unica coisa que eu sei: meu RELOGIO não cumpre HORARIO. Pra se ter uma IDEIA, não sei que DIA é HOJE.",
+		"object": {
+			"RELOGIO": {
+				"type": "COLLECT_OBJ",
+				"description": "Analógico. Preto e Branco. Deve ter 6 ou 10 anos.",
+				"status": {
+					"positive": "NONE",
+					"negative": "Aah, será que por isso?! é um Relógio analógico ..."
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			},
+			"HORARIO": {
+				"type": "SCENE_OBJ",
+				"description": "Quase hora do jogo: vai Corinthians!",
+				"status": {
+					"positive": "Espera! Vai começar o jogo. Você pega o manto do Timão e vai para a SALA...",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_03"
+			},
+			"IDEIA": {
+				"type": "SCENE_OBJ",
+				"description": "Você me viu ontem. Me viu hoje. Vai me ver amanhã. Mas nunca sabe 100% sobre mim. Olhou pra mim, piscou, já mudei. Estou em vários lugares. Eu sou o que você vẽ, não o que viu!",
+				"status": {
+					"positive": "Assim é facil!",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": ""
+			},
+			"DIA": {
+				"type": "SCENE_OBJ",
+				"description": "Que dia é hoje? dia de Corinthians!",
+				"status": {
+					"positive": "Não sei que dia é hoje. Mas sei que hoje tem corinthians. vai Corinthians!",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": ""
+			},
+			"HOJE": {
+				"type": "SCENE_OBJ",
+				"description": "Hoje??? Eh hoje!",
+				"status": {
+					"positive": "2x0 Corinthians!",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": ""
+			}
+		}
+	},
+	"SCENE_03": {
+		"name": "É sempre a mesma situação!",
+		"description": "Cade o CONTROLE? controle do que? Da TV! Não tá aqui. Como não? Ele tá de HOME office. Que? REMOTO.",
+		"object": {
+			"CONTROLE": {
+				"type": "COLLECT_OBJ",
+				"description": "Cade o controle? tá qerendo a rédea da situação? quer exercer poder? Calma, Calma. Da Uma Segurada. Vou te ajudar. Lembre: vai Corinthians!",
+				"status": {
+					"positive": "NONE",
+					"negative": "Quem dera se eu tivesse o controle remoto."
+				},
+				"properties": {},
+				"target": ""
+			},
+			"TV": {
+				"type": "SCENE_OBJ",
+				"description": "Tá novinha. Tá na tomada. Todos os cabos conectados. E agora?",
+				"status": {
+					"positive": "Você vai até TV, liga ela e percebe que já está no canal do jogo. Mas percebe que algo está faltando, então você vai para ...",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_04"
+			},
+			"HOME": {
+				"type": "SCENE_OBJ",
+				"description": "Já estou em casa.",
+				"status": {
+					"positive": "NONE",
+					"negative": "Escolheu home, vamos voltar para o inicio. Como eu disse: Cuidado com as PALAVRAS e suas ORDENS! Suas escolhas, suas consequências..."
+				},
+				"properties": {},
+				"target": "SCENE_01"
+			},
+			"REMOTO": {
+				"type": "SCENE_OBJ",
+				"description": "Distanciado? Longe? Removido? será que é por isso é controle remoto? pois ele tá sumido.",
+				"status": {
+					"positive": "NONE",
+					"negative": "Pouco provável. Vago. Pouco nítido."
+				},
+				"properties": {},
+				"target": ""
+			}
+		}
+	},
+	"SCENE_04": {
+		"name": "Ninguém vai me dizer o que fazer. Este sou eu!",
+		"description": "Este é o meu MUNDO. Eu tenho o mundo em minhas MAOS. Eu tenho que pegar a ESTRADA, ela me leva para CASA. Há um LUGAR ao qual pertencemos.",
+		"object": {
+			"MUNDO": {
+				"type": "SCENE_OBJ",
+				"description": "O mundão girou!",
+				"status": {
+					"positive": "Corre mais rápido que tô a 200 por hora!!!!",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_07"
+			},
+			"MAOS": {
+				"type": "SCENE_OBJ",
+				"description": "Minhas Mãoes parecem estar ocupada...",
+				"status": {
+					"positive": "Você olha para sua mão e percebe que a gelada estava na sua mão, e volta para a sala...",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_05"
+			},
+			"ESTRADA": {
+				"type": "SCENE_OBJ",
+				"description": "Olha uma estrada reta, onde será que ela nos leva? bora?",
+				"status": {
+					"positive": "NONE",
+					"negative": "Vocẽ esta na estrada, estrada que te leva para a derrota :(. Cuidado com as PALAVRAS e suas ORDENS! Suas escolhas, suas consequências..."
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			},
+			"CASA": {
+				"type": "COLLECT_OBJ",
+				"description": "Já estou em casa? Vamos confirmar?",
+				"status": {
+					"positive": "NONE",
+					"negative": "Escolheu casa(home), vamos voltar para o inicio. Como eu disse: Cuidado com as PALAVRAS e suas ORDENS! Suas escolhas, suas consequências..."
+				},
+				"properties": {},
+				"target": "SCENE_01"
+			},
+			"LUGAR": {
+				"type": "SCENE_OBJ",
+				"description": "Olha que lugar...",
+				"status": {
+					"positive": "NONE",
+					"negative": "... que lugar nos levará? vamos arriscar. Mas não esqueça: Suas escolhas, suas consequências..."
+				},
+				"properties": {},
+				"target": "SCENE_06"
+			}
+		}
+	},
+	"SCENE_05": {
+		"name": "Outro JOGO? Ou DERROTA? ou VOLTAR? tu que escolhe, apenas decida...",
+		"description": "",
+		"object": {
+			"JOGO": {
+				"type": "SCENE_OBJ",
+				"description": "Bora tentar de novo?",
+				"status": {
+					"positive": "Vamos jogar de novo! Lembre: Suas escolhas, suas consequências...",
+					"negative": "NONE"
+				},
+				"properties": {
+					"DIREÇÃO": {
+						"type": "help",
+						"message": "Você tem que fazer uma escolha, porém essa escolha terá um preço."
+					}
+				},
+				"target": "SCENE_06"
+			},
+			"DERROTA": {
+				"type": "SCENE_OBJ",
+				"description": "Sua escolha!",
+				"status": {
+					"positive": "NONE",
+					"negative": "Éh sabia.. sabia.."
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			}
+			,
+			"VOLTAR": {
+				"type": "SCENE_OBJ",
+				"description": "As vezes voltar 1 passo atrás é melhor.",
+				"status": {
+					"positive": "Éh lá vamos nós...",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_01"
+			}
+		}
+	},
+	"SCENE_06": {
+		"name": "Vamos brincar...",
+		"description": "Cuidado com as PALAVRAS e suas ORDENS! Leia e pense bem ao ESCOLHER: CANADA - BRAZIL - ESTADOS_UNIDOS - AZERBAIJAO",
+		"object": {
+			"PALAVRAS": {
+				"type": "SCENE_OBJ",
+				"description": "Alemanha - Argentina - Australia - Austria -- Qual o próximo?",
+				"status": {
+					"positive": "Sou apenas palavras!",
+					"negative": "NONE"
+				},
+				"properties": {
+					"DIREÇÃO": {
+						"type": "help",
+						"message": "Leia com atenção, as vezes uma coisa é uma coisa, outra coisa é outra coisa."
+					},
+					"LEITE": {
+						"type": "easy",
+						"message": "AZERBAIJAO - ESTADOS_UNIDOS - Alerta: Cuidado com o CANADA!"
+					},
+					"CACHAÇA": {
+						"type": "joke",
+						"message": "kkk! tá difícil? ?oirf át euq roP .ues é amelborP"
+					}
+				},
+				"target": ""
+			},
+			"ORDENS": {
+				"type": "SCENE_OBJ",
+				"description": "A ordena pode te enganar, CUIDADO!",
+				"status": {
+					"positive": "NONE",
+					"negative": "Ou eu to te enganando?"
+				},
+				"properties": {},
+				"target": ""
+			},
+			"CANADA": {
+				"type": "SCENE_OBJ",
+				"description": "Minha capital é Ottawa. Sou um país norte-americano. População de 37,59 milhões.",
+				"status": {
+					"positive": "NONE",
+					"negative": "Bye Bye! Errou feio."
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			},
+			"BRAZIL": {
+				"type": "SCENE_OBJ",
+				"description": "Minha capital é Brasília. Sou um país sul-american. População de 211 milhões milhões.",
+				"status": {
+					"positive": "NONE",
+					"negative": "Vamos começar de novo. Você estava perto."
+				},
+				"properties": {},
+				"target": "SCENE_01"
+			},
+			"ESTADOS_UNIDOS": {
+				"type": "SCENE_OBJ",
+				"description": "Minha capital é Washington, DC. Sou um país norte-americano. População de 328,2 milhões.",
+				"status": {
+					"positive": "É isso. Voltamos para o jogo!",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_04"
+			},
+			"AZERBAIJAO": {
+				"type": "SCENE_OBJ",
+				"description": "Minha capital é Baku. Sou um país da Europa - Asia. População de 10,02 milhões.",
+				"status": {
+					"positive": "Oops! Não aconteceu nada. Ou fomos para outro jogo?",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_05"
+			},
+			"ESCOLHER": {
+				"type": "SCENE_OBJ",
+				"description": "Escolha uma da PALAVRAS e vamos ver se você é bom, onde será que você vai parar?",
+				"status": {
+					"positive": "Sou apenas uma escolha!",
+					"negative": "NONE"
+				},
+				"properties": {
+					"DIREÇÃO": {
+						"type": "help",
+						"message": "tudo tem uma ordem! Então pense."
+					},
+					"CACHAÇA": {
+						"type": "joke",
+						"message": "!rimrod oreuQ .sonem olep ogla ehlocse ,aid moB"
+					}
+				},
+				"target": ""
+			}
+		}
+	},
+	"SCENE_07": {
+		"name": "Dois papéis...",
+		"description": "ESCREVI em dois papéis VENCER ou PERDER. E dobrei para SORTEAR. Qual eu ESCOLHER será minha DIREÇÃO. Eu tirei o papel com ... . Vou ter que cumprir. Só vou em sentido ... . Eu não sou LOUCO nem um pouco. Os dois papéis tinham ... . Confiar no DESTINO ...",
+		"object": {
+			"ESCREVI": {
+				"type": "SCENE_OBJ",
+				"description": "Nem sei o que eu escrevi, apenas escrevi. Apenas lembre: Qual dos dois que eu tirar, vai ser minha direção!",
+				"status": {
+					"positive": "Cuidado: uma ação vale mais que duas palavras!",
+					"negative": "NONE"
+				},
+				"properties": {
+					"CASA": {
+						"type": "motivation",
+						"message": "Quero ir para casa. Talvez seja só imaginação!"
+					}
+				},
+				"target": ""
+			},
+			"VENCER": {
+				"type": "SCENE_OBJ",
+				"description": "O caminho mais fácil sempre é o melhor. As vezes mais seguro!!",
+				"status": {
+					"positive": "NONE",
+					"negative": "KKK sabia, boa sorte!"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			},
+			"PERDER": {
+				"type": "SCENE_OBJ",
+				"description": "Sou do contra? vou sempre no sentido contrário?",
+				"status": {
+					"positive": "Suas escolhas, apenas sigo.",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			},
+			"SORTEAR": {
+				"type": "SCENE_OBJ",
+				"description": "Vamos tentar a sorte! aonde vamos chegar? 50%",
+				"status": {
+					"positive": "Qual dos dois será minha direção?",
+					"negative": "NONE"
+				},
+				"properties": {
+					"DIREÇÃO": {
+						"type": "help",
+						"message": "Leia com atenção, as vezes uma coisa é uma coisa, outra coisa é outra coisa."
+					},
+					"RELOGIO": {
+						"type": "motivation",
+						"message": "O tempo está passando, só vai. É sorte, sorteado. bora!"
+					},
+					"CACHAÇA": {
+						"type": "joke",
+						"message": "kkk! tá difícil? ?oirf át euq roP .ues é amelborP"
+					}
+				},
+				"target": ""
+			},
+			"ESCOLHER": {
+				"type": "SCENE_OBJ",
+				"description": "Apenas tenha cuidado ... . Depois não me culpe.",
+				"status": {
+					"positive": "NONE",
+					"negative": "É sua escolha ... . Então faça! A próxima não vai ter tanta sorte."
+				},
+				"properties": {
+					"RELOGIO": {
+						"type": "motivation",
+						"message": "A vida é feita de escolhas, e eu escolhi ter pressa, bora bora bora..."
+					}
+				},
+				"target": ""
+			},
+			"DIREÇÃO": {
+				"type": "COLLECT_OBJ",
+				"description": "Pode ser algo bom? pode ser algo ruim? tu vai ter que decidir quando ...",
+				"status": {
+					"positive": "NONE",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": ""
+			},
+			"LOUCO": {
+				"type": "SCENE_OBJ",
+				"description": "Você acredita que eu não sou louco?",
+				"status": {
+					"positive": "Os loucos fazem loucura. Só os loucos sabem. Que loucura eu fiz? tu não vai acreditar.",
+					"negative": "NONE"
+				},
+				"properties": {
+					"CONTROLE": {
+						"type": "tip",
+						"message": "Acho que não sei escrever, não lembro de ter aprendido!"
+					}
+				},
+				"target": ""
+			},
+			"DESTINO": {
+				"type": "SCENE_OBJ",
+				"description": "Qual o seu destino? Atenção.",
+				"status": {
+					"positive": "Por que guardar para o carnaval?",
+					"negative": "NONE"
+				},
+				"properties": {
+					"DIREÇÃO": {
+						"type": "motivation",
+						"message": "O que for pra ser, vai ser!"
+					}
+				},
+				"target": ""
+			},
+			"NENHUM": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "Parabéns. Éh isso. Bora de next...",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_08"
+			}
+		}
+	},
+	"SCENE_08": {
+		"name": "Éh issssoo, Parabéns. Cê passou pela introdução... Agora o jogou mudou, sim, completamente kkk.",
+		"description": "Agora o JOGO vai realmente COMEÇAR. Se tu chegou até aqui, já entendeu como o jogo funciona. E sim, começa da pergunta 03, motivo? éh a vida. Não sei: ARROZ, CERVEJA, MAMAO, NOVECENTOS",
+		"object": {
+			"JOGO": {
+				"type": "SCENE_OBJ",
+				"description": "O jogo vai começar, pegue as coisas ela pode te ajudar ou atrapalhar, acho que eh isso. Ah, as vezes não tem descrição. Não adianta check!!!",
+				"status": {
+					"positive": "Só COMEÇAR o jogo!",
+					"negative": "NONE"
+				},
+				"properties": {
+					"CONTROLE": {
+						"type": "help",
+						"message": "As vezes não tem descrição, outras não tem check, outras não with, é a vida! :P"
+					},
+					"DIREÇÃO": {
+						"type": "motivation",
+						"message": "Use o inventário com sabedoria, mas não precisa guardar para o natal."
+					}
+				},
+				"target": ""
+			},
+			"COMEÇAR": {
+				"type": "SCENE_OBJ",
+				"description": "Bora?",
+				"status": {
+					"positive": "Começando...",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_11"
+			},
+			"ARROZ": {
+				"type": "COLLECT_OBJ",
+				"description": "Tô com fome!",
+				"status": {
+					"positive": "NONE",
+					"negative": "Falta o feijão!"
+				},
+				"properties": {},
+				"target": ""
+			},
+			"CERVEJA": {
+				"type": "COLLECT_OBJ",
+				"description": "<3!",
+				"status": {
+					"positive": "NONE",
+					"negative": "Que pena só tem uma! mas ainda não eh hora."
+				},
+				"properties": {},
+				"target": ""
+			},
+			"MAMAO": {
+				"type": "COLLECT_OBJ",
+				"description": "Uma mão?",
+				"status": {
+					"positive": "NONE",
+					"negative": "ainda não tem açucar calma"
+				},
+				"properties": {},
+				"target": ""
+			},
+			"NOVECENTOS": {
+				"type": "COLLECT_OBJ",
+				"description": "No-no-nove, zero, zero ei, ei, ei. Ascensão. Surpresa!",
+				"status": {
+					"positive": "NONE",
+					"negative": "E ae NOVECENTOS? ainda não."
+				},
+				"properties": {},
+				"target": ""
+			}
+		}
+	},
+	"SCENE_09": {
+		"name": "Desafio 12 - Quiz!",
+		"description": "Dado os GRUPOS: GP01, GP02, GP03, GP04. Em qual desses grupos possui apenas tipos primitivos?",
+		"object": {
+			"GRUPOS": {
+				"type": "SCENE_OBJ",
+				"description": "As vezes posso te ajuda, não sei. Talvez!",
+				"status": {
+					"positive": "Sou neutro!!!!!!!",
+					"negative": "NONE"
+				},
+				"properties": {
+					"AGUA": {
+						"type": "tip",
+						"message": "Já ta pedindo agua? kkk Dica: Linguagem de programação!"
+					},
+					"LEITE": {
+						"type": "tip",
+						"message": "Prefiro os ímpares! 1 - 3 - 5 - 7 - 9 ..."
+					},
+					"CACHAÇA": {
+						"type": "joke",
+						"message": "Prefiro os pares! GP01, GP03, GP05, GP07"
+					}
+				},
+				"target": ""
+			},
+			"GP01": {
+				"type": "SCENE_OBJ",
+				"description": "Inteiro, Temporal, Caractere, Double",
+				"status": {
+					"positive": "NONE",
+					"negative": "Perdeu! Devia ter programado mais. :D"
+				},
+				"properties": {},
+				"target": "SCENE_08"
+			},
+			"GP02": {
+				"type": "SCENE_OBJ",
+				"description": "Inteiro, Booleano, Tipografia, Double",
+				"status": {
+					"positive": "NONE",
+					"negative": "Perdeu! Devia ter programado mais. :D"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			},
+			"GP03": {
+				"type": "SCENE_OBJ",
+				"description": "Inteiro, Booleano, Caractere, Double",
+				"status": {
+					"positive": "Next... A grande pergunta: vitória ou derrota?",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_10"
+			},
+			"GP04": {
+				"type": "SCENE_OBJ",
+				"description": "Temporal, Triple, Caractere, Double",
+				"status": {
+					"positive": "NONE",
+					"negative": "Perdeu! Devia ter programado mais. :D"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			}
+		}
+	},
+	"SCENE_10": {
+		"name": "A grande pergunta: ",
+		"description": "Que REMEDIO meu pai tomou para sumir? #semDescricao #semDica #semAjuda",
+		"object": {
+			"REMEDIO": {
+				"type": "SCENE_OBJ",
+				"description": "RISOTRIL - DORIL - DIVERTIL",
+				"status": {
+					"positive": "NONE",
+					"negative": "Não! Sim! Eu sou apenas Genérico."
+				},
+				"properties": {
+					"LEITE": {
+						"type": "tip",
+						"message": "Lá nas primeira cenas"
+					},
+					"ARROZ": {
+						"type": "tip",
+						"message": "Lembre das primeiras cenas impares"
+					},
+					"MAMAO": {
+						"type": "tip",
+						"message": "Lembre das primeiras cenas impares"
+					},
+					"CERVEJA": {
+						"type": "easy",
+						"message": "Dica: eh um remedio #ficaDica"
+					},
+					"NOVECENTOS": {
+						"type": "tip",
+						"message": "No-no-nove, zero, zero ei, ei, ei!"
+					}
+				},
+				"target": ""
+			},
+			"RISOTRIL": {
+				"type": "SCENE_OBJ",
+				"description": "huahuahuahuahauhau!",
+				"status": {
+					"positive": "NONE",
+					"negative": "Ta rindo do que? kkk perdeu!"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			},
+			"DORIL": {
+				"type": "SCENE_OBJ",
+				"description": "Tem receita?",
+				"status": {
+					"positive": "Éh isso! tomou doril, sumiu. Mas tu venceu!!!!! :( :( :( :(",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_17"
+			},
+			"DIVERTIL": {
+				"type": "SCENE_OBJ",
+				"description": "Tinha dois caminhões voando. Um deles caiu. Por que o outro continuou voando? R: Porque era caminhão-pipa.",
+				"status": {
+					"positive": "NONE",
+					"negative": "Se devertiu? mas tu perdeu kkk!"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			}
+		}
+	},
+	"SCENE_11": {
+		"name": "Desafio 03 - Música",
+		"description": "Qual MC canta a música: Favelado Turco?",
+		"object": {
+			"MC": {
+				"type": "SCENE_OBJ",
+				"description": "LEO_DA_BAIXADA - NK - RAFFA_TORRES - HARRIEL",
+				"status": {
+					"positive": "Escolha uma opção: ....",
+					"negative": "NONE"
+				},
+				"properties": {
+					"ARROZ": {
+						"type": "easy",
+						"message": "LEO_DA_BAIXADA - NK - HARRIEL"
+					},
+					"MAMAO": {
+						"type": "easy",
+						"message": "Praia! Agua! Mar!"
+					},
+					"CERVEJA": {
+						"type": "joke",
+						"message": "Dica: funk!"
+					},
+					"NOVECENTOS": {
+						"type": "tip",
+						"message": "No-no-nove, zero, zero ei, ei, ei! Não!"
+					}
+				},
+				"target": ""
+			},
+			"LEO_DA_BAIXADA": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "Vamos de next!",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_12"
+			},
+			"NK": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "Quase. Outro?",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": ""
+			},
+			"RAFFA_TORRES": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "NONE",
+					"negative": "Eu disse MC! Não posso fazer nada, bye bye :P"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			},
+			"HARRIEL": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "NONE",
+					"negative": "Tente outra vez!"
+				},
+				"properties": {},
+				"target": "SCENE_11"
+			}
+		}
+	},
+	"SCENE_12": {
+		"name": "Desafio 04 - Frase",
+		"description": "QUEM disse: 'Joga a maleta de 1 milhão pra você ver quem é de verdade'?",
+		"object": {
+			"QUEM": {
+				"type": "SCENE_OBJ",
+				"description": "NK - RYAN_SP - HARIDADE - PLATÃO",
+				"status": {
+					"positive": "Escolha uma opção: ....",
+					"negative": "NONE"
+				},
+				"properties": {
+					"ARROZ": {
+						"type": "tip",
+						"message": "Bye Bye Platão!"
+					},
+					"MAMAO": {
+						"type": "easy",
+						"message": "RYAN_SP - HARIDADE"
+					},
+					"CERVEJA": {
+						"type": "joke",
+						"message": "Dica: funk!"
+					},
+					"NOVECENTOS": {
+						"type": "easy",
+						"message": "No-no-nove, zero, zero ei, ei, ei!"
+					}
+				},
+				"target": ""
+			},
+			"NK": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "NONE",
+					"negative": "Não! Não! Não! Não! Não! Quem?"
+				},
+				"properties": {},
+				"target": ""
+			},
+			"RYAN_SP": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "NONE",
+					"negative": "Vamos voltar 1 pergunta! Apenas pra tu refletir."
+				},
+				"properties": {},
+				"target": "SCENE_11"
+			},
+			"HARIDADE": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "Bora de Next.",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_13"
+			},
+			"PLATÃO": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "NONE",
+					"negative": "kkk, aí não. Escolheu e escolheu muito errado! bye bye :D"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			}
+		}
+	},
+	"SCENE_13": {
+		"name": "Desafio 05 - Cuidado!",
+		"description": "O que pesa mais: 1 kg de CHUMBO ou 1 kg de ALGODÂO?",
+		"object": {
+			"CHUMBO": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "NONE",
+					"negative": "KKK lá vamos nós voltarmos para o começo das perguntas."
+				},
+				"properties": {},
+				"target": "SCENE_08"
+			},
+			"ALGODÂO": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "NONE",
+					"negative": "Vamos de primeira pergunta!"
+				},
+				"properties": {},
+				"target": "SCENE_09"
+			},
+			"NENHUM": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "Bora de Next. As próximas perguntas são apenas duas alternativas. **Sem descrição**. Pay attention!",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_14"
+			}
+		}
+	},
+	"SCENE_14": {
+		"name": "Desafio 06 - Palavras!",
+		"description": "Ele toma: IORGUTE ou IOGURTE de morango?",
+		"object": {
+			"IORGUTE": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "NONE",
+					"negative": "Leia o dicionário!"
+				},
+				"properties": {},
+				"target": "SCENE_13"
+			},
+			"IOGURTE": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "Next...",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_20"
+			}
+		}
+	},
+	"SCENE_15": {
+		"name": "Desafio 10 - Quiz!",
+		"description": "Dado os GRUPOS: GP01, GP02, GP03, GP04, GP05. Em qual desses grupos todas as palavras foram escritas de modo correto?",
+		"object": {
+			"GRUPOS": {
+				"type": "SCENE_OBJ",
+				"description": "As vezes posso te ajuda, não sei. Talvez!",
+				"status": {
+					"positive": "Sou neutro!!!!!!!",
+					"negative": "NONE"
+				},
+				"properties": {
+					"ARROZ": {
+						"type": "tip",
+						"message": "GP02 - GP04"
+					},
+					"MAMAO": {
+						"type": "easy",
+						"message": "Pode ser os pares, será? Pares são os 2 e 4?"
+					},
+					"CERVEJA": {
+						"type": "joke",
+						"message": "É um grupo de 1 a 5 e menor que 6 e maior que 0"
+					},
+					"NOVECENTOS": {
+						"type": "joke",
+						"message": "No-no-nove, zero, zero ei, ei, ei!"
+					}
+				},
+				"target": ""
+			},
+			"GP01": {
+				"type": "SCENE_OBJ",
+				"description": "asterístico, beneficiente, meteorologia, entertido",
+				"status": {
+					"positive": "NONE",
+					"negative": "Perdeu! Devia ter lido o dicionário mais vezes. :D"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			},
+			"GP02": {
+				"type": "SCENE_OBJ",
+				"description": "asterisco, beneficente, meteorologia, entretido",
+				"status": {
+					"positive": "Next...",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_16"
+			},
+			"GP03": {
+				"type": "SCENE_OBJ",
+				"description": "asterisco, beneficente, metereologia, entretido",
+				"status": {
+					"positive": "NONE",
+					"negative": "Perdeu! Devia ter lido o dicionário mais vezes. :D"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			},
+			"GP04": {
+				"type": "SCENE_OBJ",
+				"description": "asterístico, beneficiente, metereologia, entretido",
+				"status": {
+					"positive": "NONE",
+					"negative": "Perdeu! Devia ter lido o dicionário mais vezes. :D"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			},
+			"GP05": {
+				"type": "SCENE_OBJ",
+				"description": "asterisco, beneficiente, metereologia, entretido",
+				"status": {
+					"positive": "NONE",
+					"negative": "Perdeu! Devia ter lido o dicionário mais vezes. :D"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			}
+		}
+	},
+	"SCENE_16": {
+		"name": "Desafio 11 - Quiz!",
+		"description": "Dado os GRUPOS: GP01, GP02, GP03, GP04. Em qual desses grupos apresenta apenas paradigmas de programação?",
+		"object": {
+			"GRUPOS": {
+				"type": "SCENE_OBJ",
+				"description": "As vezes posso te ajuda, não sei. Talvez!",
+				"status": {
+					"positive": "Sou neutro!!!!!!!",
+					"negative": "NONE"
+				},
+				"properties": {
+					"ARROZ": {
+						"type": "tip",
+						"message": "Cuidado: GP02 - GP04"
+					},
+					"MAMAO": {
+						"type": "easy",
+						"message": "Vamos de impar?"
+					},
+					"CERVEJA": {
+						"type": "easy",
+						"message": "eno opurg o e"
+					},
+					"NOVECENTOS": {
+						"type": "tip",
+						"message": "No-no-nove, zero, zero ei, ei, ei! ei não o GP04!"
+					}
+				},
+				"target": ""
+			},
+			"GP01": {
+				"type": "SCENE_OBJ",
+				"description": "Imperativo, Funcional, Lógico e Orientado a Objetos",
+				"status": {
+					"positive": "Next...",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_09"
+			},
+			"GP02": {
+				"type": "SCENE_OBJ",
+				"description": "Algol, Basic, Lógico e Orientado a Objetos",
+				"status": {
+					"positive": "NONE",
+					"negative": "Perdeu! Devia ter programado mais. :D"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			},
+			"GP03": {
+				"type": "SCENE_OBJ",
+				"description": "Imperativo, Programar, Lógico e Orientado a Objetos",
+				"status": {
+					"positive": "NONE",
+					"negative": "Perdeu! Devia ter programado mais. :D"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			},
+			"GP04": {
+				"type": "SCENE_OBJ",
+				"description": "Orientado a Objetos, Java, Imperativo e Lógico",
+				"status": {
+					"positive": "NONE",
+					"negative": "Perdeu! Devia ter programado mais. :D"
+				},
+				"properties": {},
+				"target": "SCENE_00"
+			}
+		}
+	},
+	"SCENE_17": {
+		"name": "You Are The Champion",
+		"description": "Você sobreviveu! Podia ter desistido. Mas continuou. Éh isso...",
+		"object": {}
+	},
+	"SCENE_18": {
+		"name": "Desafio 09 - Palavras!",
+		"description": "Nossa, cheiro de: MEXERICA ou MEXIRICA?",
+		"object": {
+			"MEXIRICA": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "NONE",
+					"negative": "Leia mais letras de músicas!"
+				},
+				"properties": {},
+				"target": "SCENE_13"
+			},
+			"MEXERICA": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "Próxima nível de perguntas! Leia as descrições: ",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_15"
+			}
+		}
+	},
+	"SCENE_19": {
+		"name": "Desafio 08 - Palavras!",
+		"description": "Eles precisam cortar os gastos: SUPÉRFULOS ou SUPÉRFLUOS no mercado?",
+		"object": {
+			"SUPÉRFULOS": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "NONE",
+					"negative": "Leia mais livros de receita!"
+				},
+				"properties": {},
+				"target": "SCENE_13"
+			},
+			"SUPÉRFLUOS": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "Next...",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_18"
+			}
+		}
+	},
+	"SCENE_20": {
+		"name": "Desafio 07 - Palavras!",
+		"description": "Ela comeu pão com: MANTEIGA ou MANTEGA diet?",
+		"object": {
+			"MANTEGA": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "NONE",
+					"negative": "Leia mais livros!"
+				},
+				"properties": {},
+				"target": "SCENE_13"
+			},
+			"MANTEIGA": {
+				"type": "SCENE_OBJ",
+				"description": "",
+				"status": {
+					"positive": "Next...",
+					"negative": "NONE"
+				},
+				"properties": {},
+				"target": "SCENE_19"
+			}
+		}
+	}
+}
